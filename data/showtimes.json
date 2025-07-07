@@ -1,0 +1,18 @@
+[
+    {
+        "movie": {
+            "title": "One",
+            "genre": "Drama"
+        },
+        "time": "6:00PM",
+        "seats": 0
+    },
+    {
+        "movie": {
+            "title": "Got",
+            "genre": "Fantasy"
+        },
+        "time": "5:00PM",
+        "seats": 3
+    }
+]

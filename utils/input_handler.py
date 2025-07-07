@@ -20,7 +20,7 @@ admin_input_fields = {
     "genre": {
         "prompt": "Enter the genre of the movie: ",
         "type": str,
-        "format": lambda x: x.strip()
+        "format": lambda x: x.strip().title()
     },
     **shared_fields
 }

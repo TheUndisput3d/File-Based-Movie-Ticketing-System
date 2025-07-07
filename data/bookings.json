@@ -1,0 +1,16 @@
+[
+    {
+        "id": "17a38fb0-fa3e-4833-a234-4f144add0af9",
+        "user_name": "Aayush",
+        "movie": "One",
+        "time": "6:00PM",
+        "seats_booked": 2
+    },
+    {
+        "id": "e756787a-ac2c-4157-9135-43b32f090b64",
+        "user_name": "Punam",
+        "movie": "Got",
+        "time": "5:00PM",
+        "seats_booked": 2
+    }
+]
