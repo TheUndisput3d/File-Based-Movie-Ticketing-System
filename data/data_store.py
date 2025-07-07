@@ -1,0 +1,3 @@
+movies = []
+showtimes = []
+bookings = []
