@@ -7,5 +7,3 @@ class Booking:
         self.time = time
         self.seats_booked = seats_booked
         
-
-# print(uuid.uuid4())
