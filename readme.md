@@ -16,31 +16,6 @@ A command-line based system that allows admins to manage movie showtimes and use
 
 ---
 
-## Project Structure
-
-movie-ticket-booking/
-│
-├── data/
-│   └── data_store.py         # Handles loading/saving data to JSON files
-│   └── movies.json           # Stores movie data
-│   └── showtimes.json        # Stores showtime data
-│   └── bookings.json         # Stores booking data
-│
-├── models/
-│   └── movie.py              # Movie class with serialization methods
-│   └── showtime.py           # Showtime class with serialization methods
-│   └── booking.py            # Booking class with serialization methods
-│
-├── services/
-│   └── admin_service.py      # Admin operations: add movies and showtimes
-│   └── user_service.py       # User operations: book and cancel tickets
-│
-├── utils/
-│   └── input_handler.py      # Input validation and formatting
-│
-├── main.py                   # Entry point for running the system
-└── README.md                 # Project documentation
-
 ## Data Persistence
 
 All data is saved and loaded using JSON files for persistent storage:
@@ -53,6 +28,32 @@ This eliminates the need for temporary in-memory lists, allowing the system to r
 
 ---
 
+## Modules Overview
+
+### `data_store.py`
+Handles reading and writing JSON files for movies, showtimes, and bookings.
+
+### `movie.py`, `showtime.py`, `booking.py`
+Each model includes:
+- Constructor
+- `to_dict()` for serialization
+- `from_dict()` for deserialization
+
+### `admin_service.py`
+- `add_movie(title, genre)`
+- `add_showtime(movie_title, time, seats)`
+
+### `user_service.py`
+- `book_ticket(user_name, movie_title, time, seats)`
+- `cancel_booking(booking_id)`
+
+### `input_handler.py`
+Reusable input prompts and validation for both admin and user roles.
+
+### `main.py`
+Main loop for role selection and interaction.
+
+---
 ## Setup and Installation
 
 To get the system up and running on your machine:
