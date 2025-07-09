@@ -1,6 +1,7 @@
 # Movie Ticket Booking System
 
 A command-line based system that allows admins to manage movie showtimes and users to book tickets. Designed with modular components and **file-based JSON storage** for persistence and ease of testing.
+
 ---
 
 ## Features
