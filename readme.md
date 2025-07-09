@@ -1,4 +1,4 @@
-<!-- # Movie Ticket Booking System
+# Movie Ticket Booking System
 
 A command-line based system that allows admins to manage movie showtimes and users to book tickets. Designed with modular components and **file-based JSON storage** for persistence and ease of testing.
 ---
@@ -41,31 +41,6 @@ movie-ticket-booking/
 ├── main.py                   # Entry point for running the system
 └── README.md                 # Project documentation
 
-## 🧩 Modules Overview
-
-### `data_store.py`
-Handles reading and writing JSON files for movies, showtimes, and bookings.
-
-### `movie.py`, `showtime.py`, `booking.py`
-Each model includes:
-- Constructor
-- `to_dict()` for serialization
-- `from_dict()` for deserialization
-
-### `admin_service.py`
-- `add_movie(title, genre)`
-- `add_showtime(movie_title, time, seats)`
-
-### `user_service.py`
-- `book_ticket(user_name, movie_title, time, seats)`
-- `cancel_booking(booking_id)`
-
-### `input_handler.py`
-Reusable input prompts and validation for both admin and user roles.
-
-### `main.py`
-Main loop for role selection and interaction.
-
 ## Data Persistence
 
 All data is saved and loaded using JSON files for persistent storage:
@@ -99,6 +74,6 @@ python main.py
 ## Libraries Used:
 - uuid - standard library for generating booking IDs
 - Built-in functions and modules: input, print, list operations, etc
-- No third-party libraries required -->
+- No third-party libraries required
 
 
